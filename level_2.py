@@ -111,5 +111,5 @@ while level_two_beat == False and running_2 == True:
     pygame.display.update()
     if level_two_beat:
         level_three_beat = False
-        import level_3
+        runpy.run_path('level_3.py')
     pygame.display.update()

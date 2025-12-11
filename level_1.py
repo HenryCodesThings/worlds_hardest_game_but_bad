@@ -92,5 +92,5 @@ while running:
     pygame.display.update()
     if level_beat:
         next_level_beat = False
+        runpy.run_path('level_2.py')
         running = False
-        import level_2
