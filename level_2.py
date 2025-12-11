@@ -1,12 +1,6 @@
 import runpy
 from source import *
 
-#---IMAGES---
-icon = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb icon.png")
-endscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb endscreen.png")
-startscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb start screen.png")
-cubert = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb cubert.png")
-
 #---SETTING UP WINDOW---
 width = 1000
 height = 600
@@ -117,5 +111,5 @@ while level_two_beat == False and running_2 == True:
     pygame.display.update()
     if level_two_beat:
         level_three_beat = False
-        runpy.run_path("level 3.py")
+        import level_3
     pygame.display.update()

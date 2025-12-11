@@ -1,7 +1,8 @@
 from source import *
+import pygame
 
 #---MUSIC---
-pygame.mixer.music.load("C:/Users/henry/PycharmProjects/PythonProject2/audio/Hip Shop - Toby Fox (youtube).mp3")
+pygame.mixer.music.load("audio/Hip Shop - Toby Fox (youtube).mp3")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
 
@@ -32,21 +33,21 @@ while waiting_to_start:
     if keys[pygame.K_1] and waiting_to_start:
         waiting_to_start = False
     if keys[pygame.K_2] and waiting_to_start:
-        pygame.mixer.music.load("C:/Users/henry/PycharmProjects/PythonProject2/audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
+        pygame.mixer.music.load("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
         pygame.mixer.music.play(-1)
-        runpy.run_path("level 2.py")
+        runpy.run_path("level_2.py")
         pygame.quit()
     if keys[pygame.K_3] and waiting_to_start:
-        pygame.mixer_music.load("C:/Users/henry/PycharmProjects/PythonProject2/audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
+        pygame.mixer_music.load("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
         pygame.mixer.music.play(-1)
-        runpy.run_path("level 3.py")
+        runpy.run_path("level_3.py")
         pygame.quit()
     window.blit(startscreen, (0, 0))
     pygame.display.update()
 
 #---MAIN LOOP---
 pygame.display.set_caption('Worlds hardest game but bad level 1')
-pygame.mixer_music.load("C:/Users/henry/PycharmProjects/PythonProject2/audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
+pygame.mixer_music.load("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
 pygame.mixer.music.play(-1)
 running = True
 while running:
@@ -92,4 +93,4 @@ while running:
     if level_beat:
         next_level_beat = False
         running = False
-        runpy.run_path("level 2.py")
+        import level_2

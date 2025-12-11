@@ -1,6 +1,11 @@
 import pygame
 import runpy
+import sys, os
 
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 pygame.init()
 pygame.mixer.init()
 speed = 2
@@ -16,10 +21,10 @@ black = (0, 0, 0)
 white = (255, 255, 255)
 
 #---IMAGES---
-icon = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb icon.png")
-endscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb endscreen.png")
-startscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb start screen.png")
-cubert = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb cubert.png")
+icon = pygame.image.load("images/whgbb icon.png")
+endscreen = pygame.image.load("images/whgbb endscreen.png")
+startscreen = pygame.image.load("images/whgbb start screen.png")
+cubert = pygame.image.load("images/whgbb cubert.png")
 
 def movement(x, y, speed):
     pygame.time.delay(5)

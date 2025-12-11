@@ -1,14 +1,7 @@
-import pygame
-import runpy
+from source import *
 
 pygame.init()
 pygame.mixer.init()
-
-#---IMAGES---
-icon = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb icon.png")
-endscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb endscreen.png")
-startscreen = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb start screen.png")
-cubert = pygame.image.load("C:/Users/henry/PycharmProjects/PythonProject2/images/whgbb cubert.png")
 
 #---SETTING UP WINDOW---
 width = 1000
