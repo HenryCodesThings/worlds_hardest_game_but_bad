@@ -16,10 +16,10 @@ black = (0, 0, 0)
 white = (255, 255, 255)
 
 #---IMAGES---
-icon = pygame.image.load("images/whgbb icon.png")
-endscreen = pygame.image.load("images/whgbb endscreen.png")
-startscreen = pygame.image.load("images/whgbb start screen.png")
-cubert = pygame.image.load("images/whgbb cubert.png")
+icon = pygame.image.load("dist/images/whgbb icon.png")
+endscreen = pygame.image.load("dist/images/whgbb endscreen.png")
+startscreen = pygame.image.load("dist/images/whgbb start screen.png")
+cubert = pygame.image.load("dist/images/whgbb cubert.png")
 
 def movement(x, y, speed):
     pygame.time.delay(5)
