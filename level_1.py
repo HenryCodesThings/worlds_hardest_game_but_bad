@@ -92,4 +92,5 @@ while running:
     pygame.display.update()
     if level_beat:
         next_level_beat = False
+        runpy.run_path("dist/level_2.py")
         running = False
