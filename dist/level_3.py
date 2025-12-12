@@ -90,5 +90,7 @@ while level_beat == False and running_3 == True:
             running = False
     pygame.display.update()
     if level_beat:
-        level_three_beat = False
+        level_four_beat = False
+        runpy.run_path('dist/level_4.py')
+        running_3 = False
     pygame.display.update()
