@@ -35,12 +35,12 @@ while waiting_to_start:
     if keys[pygame.K_2] and waiting_to_start:
         pygame.mixer.music.load("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
         pygame.mixer.music.play(-1)
-        runpy.run_path("level_2.py")
+        runpy.run_path("dist/level_2.py")
         pygame.quit()
     if keys[pygame.K_3] and waiting_to_start:
         pygame.mixer_music.load("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
         pygame.mixer.music.play(-1)
-        runpy.run_path("level_3.py")
+        runpy.run_path("dist/level_3.py")
         pygame.quit()
     window.blit(startscreen, (0, 0))
     pygame.display.update()
@@ -92,5 +92,4 @@ while running:
     pygame.display.update()
     if level_beat:
         next_level_beat = False
-        import level_2
         running = False

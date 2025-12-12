@@ -1,4 +1,3 @@
-import runpy
 from source import *
 
 #---SETTING UP WINDOW---
@@ -111,5 +110,4 @@ while level_two_beat == False and running_2 == True:
     pygame.display.update()
     if level_two_beat:
         level_three_beat = False
-        import level_3
     pygame.display.update()
