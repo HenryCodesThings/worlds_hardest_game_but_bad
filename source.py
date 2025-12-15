@@ -1,5 +1,7 @@
 import pygame
 import runpy
+import os
+import sys
 
 pygame.init()
 pygame.mixer.init()
@@ -15,11 +17,23 @@ green = (0, 255, 0)
 black = (0, 0, 0)
 white = (255, 255, 255)
 
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+print(os.path.exists(resource_path("images/whgbb icon.png")))
+print(resource_path("images/whgbb icon.png"))
+
 #---IMAGES---
-icon = pygame.image.load("dist/images/whgbb icon.png")
-endscreen = pygame.image.load("dist/images/whgbb endscreen.png")
-startscreen = pygame.image.load("dist/images/whgbb start screen.png")
-cubert = pygame.image.load("dist/images/whgbb cubert.png")
+icon = pygame.image.load(resource_path("images/whgbb icon.png"))
+endscreen = pygame.image.load(resource_path("images/whgbb endscreen.png"))
+startscreen = pygame.image.load(resource_path("images/whgbb start screen.png"))
+cubert = pygame.image.load(resource_path("images/whgbb cubert.png"))
 
 def movement(x, y, speed):
     pygame.time.delay(5)
