@@ -47,7 +47,7 @@ while waiting_to_start:
 
 #---MAIN LOOP---
 pygame.display.set_caption('Worlds hardest game but bad level 1')
-pygame.mixer_music.load("dist/audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav")
+pygame.mixer_music.load(resource_path("audio/Need A Hand! With Lyrics (Reupload) - Deltarune Chapter 4 OST - goldenflowers (youtube).wav"))
 pygame.mixer.music.play(-1)
 running = True
 while running:
