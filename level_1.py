@@ -1,6 +1,6 @@
+#TODO to future me, the game wont load because the github version wont recognize the pygame module, your welcome :3
 from source import *
 import pygame
-
 #---MUSIC---
 pygame.mixer.music.load(resource_path("audio/Hip Shop - Toby Fox (youtube).mp3"))
 pygame.mixer.music.set_volume(0.5)
@@ -92,5 +92,5 @@ while running:
     pygame.display.update()
     if level_beat:
         next_level_beat = False
-        runpy.run_path("dist/level_2.py")
+        runpy.run_path(resource_path("level_2.py"))
         running = False
